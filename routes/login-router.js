@@ -5,7 +5,7 @@ const loginCtrl = require('../controllers/login-ctrl');
 
 const router = express.Router();
 
-router.get('/findOne/:name', loginCtrl.findOne)
+router.get('/findOne/:name/:password', loginCtrl.findOne)
 router.post('/token', utility.getJwtToken)
 
 module.exports = router
